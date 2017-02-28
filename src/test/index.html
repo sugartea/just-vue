@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title></title>
+    <script>function startTimer(){clearTimeout(refreshRemTimer),refreshRemTimer=setTimeout(refreshRem,300)}function refreshRem(){var e=docEl.getBoundingClientRect().width;e=e<240?240:e,e=e>1240?1240:e;var i=e/10;docEl.style.fontSize=i+"px"}var rem={},win=window,doc=win.document,docEl=doc.documentElement,refreshRemTimer;rem.init=function(){refreshRem(),win.addEventListener("resize",startTimer),win.addEventListener("pageshow",function(e){e.persisted&&startTimer()})},rem.init(),window.devicePixelRatio&&2==devicePixelRatio&&(document.querySelector("html").className="hairlines2"),window.devicePixelRatio&&devicePixelRatio>=3&&(document.querySelector("html").className="hairlines3");</script>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="js/main.js"></script>
+</body>
+</html>
